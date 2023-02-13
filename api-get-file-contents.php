@@ -1,6 +1,8 @@
 <?php
-    $site = ['https://randomuser.me/api']
-    $data = file_get_contents(sites[0])
-	echo 'ola mundo \n';
-    var_dump($data);
+    
+    $sites = ["https://randomuser.me/api", "https://api.agify.io/?name=leandro"];
+    $response = file_get_contents($sites[1]);
+
+    echo $response, "\n";
+
 ?>

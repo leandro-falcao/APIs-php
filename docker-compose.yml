@@ -1,0 +1,20 @@
+version: "3"
+services:
+  web:
+    # build: .
+    # image: apache-php-composer-version04:latest
+    image: php74-pdo-composer:latest
+
+    ports:
+      - 81:80
+    volumes:
+      - ./:/var/www/html
+      # - .apache2.conf:/etc/apache2/
+    # restart: always
+    working_dir: /var/www/html
+    network_mode: bridge
+    
+volumes:
+  persistent:
+
+
