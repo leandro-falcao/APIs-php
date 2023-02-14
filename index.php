@@ -6,6 +6,9 @@
     2) no body em raw, passa um json por exemplo: { "nome":"leandro" }
     **/
     require_once("api-file-get-contents/file-get-contents.php");
-// chamando a api de requisição com função php file get contents
-    print(call());
+    
+    // esta dentro de uma classe para pode ser trabalhado posteriormente
+    $chamar_classe = new chamar();
+    $data =  $chamar_classe->call();
+    print($data);
 

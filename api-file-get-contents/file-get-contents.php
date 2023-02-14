@@ -1,5 +1,7 @@
 <?php
-    function call()
+class chamar
+{
+    public function call()
     {
         //receber o valor de input vindo do postman via json atravez do body
         $vindoPostamanBodyjson = file_get_contents('php://input');
@@ -22,4 +24,4 @@
         return $response;
 
     }
-    
+}
