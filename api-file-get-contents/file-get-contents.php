@@ -19,9 +19,11 @@ class chamar
             //echo $dados;  
             // echo $response;
         } else {
-            print('vazio');
+            print('nome está vazio ');
         }
         return $response;
 
     }
+
+
 }
