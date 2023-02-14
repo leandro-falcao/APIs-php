@@ -1,15 +1,7 @@
 <?php
 
-require_once("api-get-file-contents.php");
-//        $nome = $_GET['nome'];
-//        // $nome = "le";
-   
-//    $sites = ["https://randomuser.me/api", "https://api.agify.io/?name={$nome}"];
-//        $response = file_get_contents($sites[1]);
-//        var_dump($nome);
-//        $dados = json_decode($response, true);
-      
-   
-//        // echo $dados["info"]["seed"], "\n";
-//        // echo $response, "\n";
-//        echo $response, "\n";
+// chamando o arquivo da api na pasta de api file get contens
+    require_once("api-file-get-contents/file-get-contents.php");
+// chamando a api de requisição com função php file get contents
+    print(call());
+
