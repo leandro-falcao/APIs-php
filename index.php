@@ -9,6 +9,5 @@
     
     // esta dentro de uma classe para pode ser trabalhado posteriormente
     $chamar_classe = new chamar();
-    $data =  $chamar_classe->call();
-    print($data);
+    print($chamar_classe->call());
 
