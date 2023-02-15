@@ -1,7 +1,5 @@
 <?php
 
-
-
 /**
 vamos usar a api com curl recebendo param na url de método GET   
 **/
