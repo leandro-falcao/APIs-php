@@ -3,9 +3,9 @@
 /**
 vamos usar a api com curl recebendo param na url de método GET   
 **/
-class send
+class orderCurl
 {
-    public function callCurl()
+    public function sendCurl()
     {
         //receber o valor de input vindo do postman via json atravez do body
         $vindoPostamanBodyjson = file_get_contents('php://input');
@@ -26,19 +26,19 @@ class send
         );
         curl_setopt_array($ch, $options);
 
-        // Executa a solicitação cURL
+        // Executa a solicitação cURL1111111
         $response = curl_exec($ch);
 
-        // Verifica se ocorreu algum erro durante a solicitação cURL
+        // Verificando se ocorreu algum erro durante a solicitação cURL
         if (curl_errno($ch)) {
             echo 'Erro: ' . curl_error($ch);
         }
 
-        // Fecha a sessão cURL
+        // Fecha o cURL
         curl_close($ch);
 
         // Exibe a resposta da solicitação cURL
-        echo $response;
+        return $response;
 
 
 
